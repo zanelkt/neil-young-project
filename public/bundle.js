@@ -24684,7 +24684,7 @@ var Nav = function Nav(props) {
     { className: "head" },
     _react2.default.createElement(
       "section",
-      { id: "emil", className: "hero is-small is-primary is-bold" },
+      { id: "header", className: "hero is-small is-primary is-bold" },
       _react2.default.createElement(
         "div",
         { className: "hero-body" },
@@ -24694,17 +24694,12 @@ var Nav = function Nav(props) {
           _react2.default.createElement(
             "h1",
             { className: "title" },
-            "How to become a successful Web Developer"
+            "The Godfather Of Grunge: Neil Young"
           ),
           _react2.default.createElement(
             "h2",
             { className: "subtitle" },
-            "In five minutes"
-          ),
-          _react2.default.createElement(
-            "p",
-            null,
-            " Presented by: Zane, Emil, Welli, Leslie "
+            "A Look Into His Lyrical Themes"
           )
         )
       )
