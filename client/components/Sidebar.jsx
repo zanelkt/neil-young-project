@@ -1,5 +1,5 @@
 import React from 'react'
-import stories from '../../data/data'
+import lyrics from '../../data/data'
 import {Link} from 'react-router-dom'
 
 const Sidebar = () => {
@@ -7,15 +7,15 @@ const Sidebar = () => {
         
             
             <ul>
-           <li id="link" key="intro"><Link to={`/chapter/intro`} replace><a id="span" class="button is-primary">Introduction</a></Link></li>
-                {Object.keys(stories).map(chapter => {
-                    if(chapter == 'intro'){
+           <li id="link" key="intro"><Link to={`/song/intro`} replace><a id="span" class="button is-primary">Introduction</a></Link></li>
+                {Object.keys(lyrics).map(song => {
+                    if(song == 'intro'){
                         return
                     }
                     return (
                     <div>
-                   <li key={chapter}><Link to={`/chapter/${chapter}`} replace>
-                   <a id="span" class="button is-primary">Chapter {chapter} -> </a>
+                   <li key={song}><Link to={`/song/${song}`} replace>
+                   <a id="span" class="button is-primary">Song {song}</a>
                    </Link></li>
 
                 </div>)

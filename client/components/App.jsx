@@ -2,7 +2,7 @@ import React from 'react'
 import {HashRouter as Router, Route} from 'react-router-dom';
 import Nav from './Nav'
 import Sidebar from './Sidebar'
-import Storyboard from './Storyboard'
+import MainBody from './MainBody'
 
 class App extends React.Component {
   render(){
@@ -11,13 +11,13 @@ class App extends React.Component {
       <Router>
         <div>
           <div>
-      <Route path="/" component={Nav}/>
-        </div>
-        <div className="sideplusstory">
-        <Sidebar/>
-      <div className="storyboard">
-      <Route  path="/chapter/:story" render={props => {
-              return <Storyboard {...props }/>
+            <Route path="/" component={Nav}/>
+          </div>
+
+        <div className="sideplusstory"><Sidebar/>
+        <div className="mainbody">
+      <Route  path="/song/:story" render={props => {
+              return <MainBody {...props }/>
             }}/>
         </div>
         </div>
@@ -30,3 +30,4 @@ class App extends React.Component {
 
 
 export default App
+

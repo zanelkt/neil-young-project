@@ -2470,92 +2470,92 @@ var generatePath = function generatePath() {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var stories = {
+var lyrics = {
   intro: [{
-    chapter: 0,
-    name: 'Introduction',
-    content: 'Baby\'s first Bootcamp',
-    subtitle: 'I can\'t wait to get started!',
-    image: './images/intro-baby.jpg',
-    sound: './sounds/sound1.wav'
+    song: 0,
+    name: '',
+    content: '',
+    subtitle: '',
+    image: './images/ny1.jpeg',
+    sound: ''
   }],
 
   1: [{
-    chapter: 1,
-    name: 'Chapter one',
-    content: 'I\'m only a baby and have just turned one, but I better start coding for a future of fun!',
-    subtitle: 'Learning html..',
-    image: './images/1-coding-baby.jpg',
-    sound: './sounds/sound1.wav'
+    song: 1,
+    name: 'Heart Of Gold',
+    content: 'I want to live\n    I want to give\n    I\'ve been a miner for a heart of gold\n    It\'s these expressions\n    I never give\n    That keep me searching for a heart of gold\n    \n    And I\'m getting old\n    Keep me searching for a heart of gold\n    And I\'m getting old\n    \n    I\'ve been to Hollywood\n    I\'ve been to Redwood\n    I crossed the ocean for a heart of gold\n    I\'ve been in my mind\n    It\'s such a fine line\n    That keeps me searching for a heart of gold\n    \n    And I\'m getting old\n    Keeps me searching for a heart of gold\n    And I\'m getting old\n    \n    Keep me searching for a heart of gold\n    You keep me searching and I\'m growing old\n    Keep me searching for a heart of gold\n    I\'ve been a miner for a heart of gold',
+    subtitle: 'Album: Harvest',
+    image: './images/ny2.jpeg',
+    sound: ''
   }],
 
   2: [{
     chapter: 2,
-    name: 'Chapter two',
-    content: 'I can\'t count to ten but I already know, there are only two numbers; one and zero.',
-    subtitle: 'Binary is life..',
-    image: './images/2-binary-baby.jpg',
+    name: '',
+    content: '',
+    subtitle: '',
+    image: './images/ny3.jpeg',
     sound: './sounds/soundtwo.wav'
   }],
   3: [{
     chapter: 3,
-    name: 'Chapter three',
-    content: 'I tried self directed but I can\'t even read. My fingers are too pudgy, how will I succeed?',
-    subtitle: 'Fat fingering',
-    image: './images/3-pudgy-fingers.jpg',
+    name: '',
+    content: '',
+    subtitle: '',
+    image: './images/ny4.jpeg',
     sound: './sounds/soundtwo.wav'
   }],
   4: [{
     chapter: 4,
-    name: 'Chapter four',
-    content: 'I looked high and low, threw my toys out the cot, all I wanted to create was a DDOSing bot.',
-    subtitle: 'I\'m in denial',
-    image: './images/4-toys-out-the-cot.jpg',
+    name: '',
+    content: '',
+    subtitle: '',
+    image: './images/ny5.jpeg',
     sound: './sounds/soundthree.wav'
   }],
   5: [{
     chapter: 5,
-    name: 'Chapter five',
-    content: 'World domination is a small ask, but still it is out of my tiny grasp.',
-    subtitle: 'I can\'t wait to get started!',
-    image: './images/5-fire-breathing-baby.jpg',
+    name: '',
+    content: '',
+    subtitle: '',
+    image: './images/ny6.jpeg',
     sound: './sounds/soundthree.wav'
   }],
   6: [{
     chapter: 6,
-    name: 'Chapter six',
-    content: 'At last I stumbled onto EDA, my demonic desires would at last find their way.',
-    subtitle: 'Beauty sleep is on my ToDo List..',
-    image: './images/6-demon-baby.jpg',
+    name: '',
+    content: '',
+    subtitle: '',
+    image: './images/ny7.jpeg',
     sound: './sounds/soundthree.wav'
   }],
   7: [{
     chapter: 7,
-    name: 'Chapter seven',
-    content: 'But over days and weeks I began to turn. I no longer wanted to watch the world burn.',
-    subtitle: '#peopleskills',
-    image: './images/7-world-heat-map.jpg',
+    name: '',
+    content: '',
+    subtitle: '',
+    image: './images/ny8.jpeg',
     sound: './sounds/soundthree.wav'
   }],
   8: [{
     chapter: 8,
-    name: 'Chapter eight',
-    content: 'I began to notice beauty in small things, like sharing a problem or template strings.',
-    subtitle: 'My name\'s Emil, Hello.',
-    image: './images/8-template-strings.png',
+    name: '',
+    content: '',
+    subtitle: '',
+    image: './images/ny9.jpeg',
     sound: './sounds/soundthree.wav'
   }],
   9: [{
     chapter: 9,
-    name: 'Chapter nine',
-    content: 'Now I have friends and skills I don\'t lust for riot, I can mindfully rest in peace and quiet.',
-    subtitle: 'The ice cubes melted..trust me..',
-    image: './images/9-mindfulness-child.jpg',
+    name: '',
+    content: '',
+    subtitle: '',
+    image: './images/ny10.jpg',
     sound: './sounds/soundthree.wav'
   }]
 };
 
-exports.default = stories;
+exports.default = lyrics;
 
 /***/ }),
 /* 32 */
@@ -22076,9 +22076,9 @@ var _Sidebar = __webpack_require__(72);
 
 var _Sidebar2 = _interopRequireDefault(_Sidebar);
 
-var _Storyboard = __webpack_require__(73);
+var _MainBody = __webpack_require__(73);
 
-var _Storyboard2 = _interopRequireDefault(_Storyboard);
+var _MainBody2 = _interopRequireDefault(_MainBody);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22120,9 +22120,9 @@ var App = function (_React$Component) {
               _react2.default.createElement(_Sidebar2.default, null),
               _react2.default.createElement(
                 'div',
-                { className: 'storyboard' },
-                _react2.default.createElement(_reactRouterDom.Route, { path: '/chapter/:story', render: function render(props) {
-                    return _react2.default.createElement(_Storyboard2.default, props);
+                { className: 'mainbody' },
+                _react2.default.createElement(_reactRouterDom.Route, { path: '/song/:story', render: function render(props) {
+                    return _react2.default.createElement(_MainBody2.default, props);
                   } })
               )
             )
@@ -24741,7 +24741,7 @@ var Sidebar = function Sidebar() {
             { id: 'link', key: 'intro' },
             _react2.default.createElement(
                 _reactRouterDom.Link,
-                { to: '/chapter/intro', replace: true },
+                { to: '/song/intro', replace: true },
                 _react2.default.createElement(
                     'a',
                     { id: 'span', 'class': 'button is-primary' },
@@ -24749,8 +24749,8 @@ var Sidebar = function Sidebar() {
                 )
             )
         ),
-        Object.keys(_data2.default).map(function (chapter) {
-            if (chapter == 'intro') {
+        Object.keys(_data2.default).map(function (song) {
+            if (song == 'intro') {
                 return;
             }
             return _react2.default.createElement(
@@ -24758,16 +24758,15 @@ var Sidebar = function Sidebar() {
                 null,
                 _react2.default.createElement(
                     'li',
-                    { key: chapter },
+                    { key: song },
                     _react2.default.createElement(
                         _reactRouterDom.Link,
-                        { to: '/chapter/' + chapter, replace: true },
+                        { to: '/song/' + song, replace: true },
                         _react2.default.createElement(
                             'a',
                             { id: 'span', 'class': 'button is-primary' },
-                            'Chapter ',
-                            chapter,
-                            ' -> '
+                            'Song ',
+                            song
                         )
                     )
                 )
@@ -24799,7 +24798,7 @@ var _data2 = _interopRequireDefault(_data);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Storyboard = function Storyboard(props) {
+var MainBody = function MainBody(props) {
 
     var placing = props.match.params.story;
     var img = _data2.default[placing][0].image;
@@ -24828,7 +24827,7 @@ var Storyboard = function Storyboard(props) {
                             _react2.default.createElement(
                                 'p',
                                 { className: 'title' },
-                                'Chapter ',
+                                'Song ',
                                 placing,
                                 ' '
                             ),
@@ -24855,7 +24854,7 @@ var Storyboard = function Storyboard(props) {
     );
 };
 
-exports.default = Storyboard;
+exports.default = MainBody;
 
 /***/ })
 /******/ ]);

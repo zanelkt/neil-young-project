@@ -37,11 +37,11 @@ a {
 }
 
 #bg {
-  background-color: #FF4136;
+  background-color: black;
 }
 
 #span {
-  color:white;
+  color: white;
   font-size: 1.25em;
   text-decoration-line: none;
   min-width: 182px;
@@ -52,4 +52,6 @@ a {
 
 #header {
   max-height: 190px;
+  color: black;
+ 
 }

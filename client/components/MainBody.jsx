@@ -1,7 +1,7 @@
 import React from 'react'
 import data from '../../data/data'
 
-const Storyboard = props => {
+const MainBody = props => {
 
     let placing = props.match.params.story
     let img = data[placing][0].image
@@ -16,7 +16,7 @@ const Storyboard = props => {
                         <div className="tile">
                             <div className="tile is-parent">
                                 <article id="bg" className="tile is-child notification is-info">
-                                <p className="title">Chapter {placing} </p>
+                                <p className="title">Song {placing} </p>
                                 <p className="subtitle">{subtitle}</p>
                                 <figure className="image is-5by3">
                                 <img src={img}/>
@@ -32,4 +32,4 @@ const Storyboard = props => {
         )
 }
 
-export default Storyboard
+export default MainBody
